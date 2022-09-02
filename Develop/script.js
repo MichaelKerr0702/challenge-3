@@ -79,6 +79,5 @@ function generatePassword() {
       passwordgenerated.push(onechar);
     }
   }
-  console.log(passwordgenerated);
   return passwordgenerated;
 }
