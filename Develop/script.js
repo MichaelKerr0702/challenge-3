@@ -64,7 +64,6 @@ function generatePassword() {
     var randomSelection = Math.floor(Math.random() * arrayOfYes.length);
     if(arrayOfYes[randomSelection] === "lowerCase"){
       var random = (Math.floor(Math.random() * 26));
-      console.log(random);
       var onechar = arrayOfAlphabet[random];
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "upperCase"){
