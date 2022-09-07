@@ -65,18 +65,22 @@ function generatePassword() {
     if(arrayOfYes[randomSelection] === "lowerCase"){
       var random = (Math.floor(Math.random() * 26));
       var onechar = arrayOfAlphabet[random];
+      console.log(onechar);
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "upperCase"){
       var random = (Math.floor(Math.random() * 26));
       var onechar = arrayOfUpper[random];
+      console.log(onechar);
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "numbers"){
       var random =(Math.floor(Math.random() * 26));
       var onechar = arrayOfNumbers[random];
+      console.log(onechar);
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "specialCharacters"){
       var random = (Math.floor(Math.random() * 26));
       var onechar = arrayOfSpecialChars[random];
+      console.log(onechar);
       passwordgenerated.push(onechar);
     }
 
