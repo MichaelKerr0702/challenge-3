@@ -73,12 +73,12 @@ function generatePassword() {
       console.log(onechar);
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "numbers"){
-      var random =(Math.floor(Math.random() * 26));
+      var random =(Math.floor(Math.random() * 10));
       var onechar = arrayOfNumbers[random];
       console.log(onechar);
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "specialCharacters"){
-      var random = (Math.floor(Math.random() * 26));
+      var random = (Math.floor(Math.random() * 32));
       var onechar = arrayOfSpecialChars[random];
       console.log(onechar);
       passwordgenerated.push(onechar);
