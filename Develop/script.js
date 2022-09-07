@@ -78,7 +78,7 @@ function generatePassword() {
       console.log(onechar);
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "specialCharacters"){
-      var random = (Math.floor(Math.random() * 32));
+      var random = (Math.floor(Math.random() * 30));
       var onechar = arrayOfSpecialChars[random];
       console.log(onechar);
       passwordgenerated.push(onechar);
