@@ -1,5 +1,6 @@
 //global vars 
 arrayOfNumbers = ['0','1','2','4','5','6','7','8','9'];
+arrayOfUpper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 arrayOfAlphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 arrayOfSpecialChars =['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>',"?","@","[",'\'',']',"^","_","`",'{','|','}','~'];
 // Assignment Code
@@ -62,22 +63,24 @@ function generatePassword() {
   for(var i = 0; i < passwordLength; i++){
     var randomSelection = Math.floor(Math.random() * arrayOfYes.length);
     if(arrayOfYes[randomSelection] === "lowerCase"){
-      var random = (Math.random() * 26);
+      var random = (Math.floor(Math.random() * 26));
+      console.log(random);
       var onechar = arrayOfAlphabet[random];
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "upperCase"){
-      var random = (Math.random() * 26);
-      var onechar = arrayOfAlphabet[random];
+      var random = (Math.floor(Math.random() * 26));
+      var onechar = arrayOfUpper[random];
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "numbers"){
-      var random = (Math.random() * 8);
+      var random =(Math.floor(Math.random() * 26));
       var onechar = arrayOfNumbers[random];
       passwordgenerated.push(onechar);
     }else if (arrayOfYes[randomSelection] === "specialCharacters"){
-      var random = (Math.random() * 8);
+      var random = (Math.floor(Math.random() * 26));
       var onechar = arrayOfSpecialChars[random];
       passwordgenerated.push(onechar);
     }
+
   }
-  return passwordgenerated;
+  return passwordgenerated.join('');
 }
